@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".WesternMusicActivity"></activity>
+        <activity android:name=".ThrillerMusicActivity" />
+        <activity android:name=".HappyMusicActivity" />
+        <activity android:name=".RomanticMusicActivity" />
+        <activity android:name=".HorrorMusicActivity" />
+        <activity android:name=".DramaMusicActivity" />
+        <activity android:name=".ComedyMusicActivity" />
+        <activity android:name=".ActionMusicActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
