@@ -1,11 +1,11 @@
 package com.example.android.addmusic;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,53 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Find the View that shows the action category
-        TextView action = findViewById(R.id.action);
+        // Find the button that starts the app
+        Button start = findViewById(R.id.start);
 
-        // Set a click listener on that View
-        action.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the action category is clicked on.
+        start.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the drama category is clicked on.
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link ActionMusicActivity}
-                Intent actionIntent = new Intent(MainActivity.this, ActionMusicActivity.class);
+                // Create a new intent to open the {@link MainMenuActivity}
+                Intent menuIntent = new Intent(MainActivity.this, MainMenuActivity.class);
 
                 // Start the new activity
-                startActivity(actionIntent);
+                startActivity(menuIntent);
             }
         });
-
-        // Find the View that shows the comedy category
-        TextView comedy = findViewById(R.id.comedy);
-
-        // Set a click listener on that View
-        comedy.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the comedy category is clicked on.
-            @Override
-            public void onClick(View view) {
-                // Create a new intent to open the {@link ComedyMusicActivity}
-                Intent comedyIntent = new Intent(MainActivity.this, ComedyMusicActivity.class);
-
-                // Start the new activity
-                startActivity(comedyIntent);
-            }
-        });
-
-
-    // Find the View that shows the drama category
-    TextView drama = findViewById(R.id.drama);
-
-    drama.setOnClickListener(new View.OnClickListener() {
-        // The code in this method will be executed when the drama category is clicked on.
-        @Override
-        public void onClick(View view) {
-            // Create a new intent to open the {@link DramaMusicActivity}
-            Intent dramaIntent = new Intent(MainActivity.this, DramaMusicActivity.class);
-
-            // Start the new activity
-            startActivity(dramaIntent);
-        }
-    });
-
     }
 }

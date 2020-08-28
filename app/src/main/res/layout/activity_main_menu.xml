@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_dark"
+    tools:context=".MainMenuActivity">
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/action"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="@font/aldrich"
+        tools:paddingBottom="20dp" />
+
+    <TextView
+        android:id="@+id/comedy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/comedy"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action" />
+
+    <TextView
+        android:id="@+id/drama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/drama"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comedy" />
+
+    <TextView
+        android:id="@+id/drama2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aldrich"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="@string/thriller"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drama" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

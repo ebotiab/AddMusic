@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AddMusic</string>
 
-<!--    Different options of music-->
+    <!--    Different options of music-->
     <string name="action">Action</string>
     <string name="comedy">Comedy</string>
     <string name="drama">Drama</string>
@@ -10,5 +10,10 @@
     <string name="romantic">Romantic</string>
     <string name="thriller">Thriller</string>
     <string name="western">Western</string>
+
+    <!--    Logo message-->
+    <string name="logo_phrase">Give life to your creations</string>
+
+    <string name="start">Start</string>
 
 </resources>
