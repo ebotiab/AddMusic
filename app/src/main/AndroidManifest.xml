@@ -9,14 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WesternMusicActivity"></activity>
-        <activity android:name=".ThrillerMusicActivity" />
-        <activity android:name=".HappyMusicActivity" />
-        <activity android:name=".RomanticMusicActivity" />
-        <activity android:name=".HorrorMusicActivity" />
-        <activity android:name=".DramaMusicActivity" />
-        <activity android:name=".ComedyMusicActivity" />
-        <activity android:name=".ActionMusicActivity" />
+        <activity
+            android:name=".WesternMusicActivity"
+            android:label="@string/western"/>
+        <activity
+            android:name=".ThrillerMusicActivity"
+            android:label="@string/thriller"/>
+        <activity android:name=".HappyMusicActivity"
+            android:label="@string/happy"/>
+        <activity android:name=".RomanticMusicActivity"
+            android:label="@string/romantic"/>
+        <activity android:name=".HorrorMusicActivity"
+            android:label="@string/horror"/>
+        <activity android:name=".DramaMusicActivity"
+            android:label="@string/drama"/>
+        <activity android:name=".ComedyMusicActivity"
+            android:label="@string/comedy"/>
+        <activity android:name=".ActionMusicActivity"
+            android:label="@string/action"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
