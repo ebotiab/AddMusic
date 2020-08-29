@@ -1,18 +1,3 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.example.android.addmusic;
 
 import android.os.Bundle;
@@ -31,8 +16,18 @@ public class ComedyMusicActivity extends AppCompatActivity {
 
         // Create a list of songs
         ArrayList<Song> songs = new ArrayList();
-        songs.add(new Song("Heart of Courage", "Two Steps From Hell"));
-        songs.add(new Song("He", "Tw"));
+        songs.add(new Song("Don't Stop Me now", "Queen"));
+        songs.add(new Song("Watermelon Sugar", "Harry Styles"));
+        songs.add(new Song("Happy", "Pharrel Williams"));
+        songs.add(new Song("La gallina turuleca", "MILIKI"));
+        songs.add(new Song("All Star", "Smash Mouth"));
+        songs.add(new Song("Only Human", "Jonas Brothers"));
+        songs.add(new Song("September", "Earth Wind & Fire"));
+        songs.add(new Song("Kung fu Fighting", "CeeLo Green, Jack Black"));
+        songs.add(new Song("Party Rock", "LMFAO"));
+
+
+
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Songs}s. The
         // adapter knows how to create list items for each item in the list.

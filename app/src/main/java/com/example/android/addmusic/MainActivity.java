@@ -3,9 +3,9 @@ package com.example.android.addmusic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find the button that starts the app
-        Button start = findViewById(R.id.start);
+        ConstraintLayout start = findViewById(R.id.main);
 
         start.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the drama category is clicked on.

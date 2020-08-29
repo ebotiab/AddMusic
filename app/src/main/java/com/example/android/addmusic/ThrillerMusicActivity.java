@@ -1,18 +1,3 @@
-/*
- * Copyright (C) 2016 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.example.android.addmusic;
 
 import android.os.Bundle;
@@ -31,8 +16,10 @@ public class ThrillerMusicActivity extends AppCompatActivity {
 
         // Create a list of songs
         ArrayList<Song> songs = new ArrayList();
-        songs.add(new Song("Heart of Courage", "Two Steps From Hell"));
-        songs.add(new Song("He", "Tw"));
+        songs.add(new Song("Discombobulate", "Hans Zimmer"));
+        songs.add(new Song("Professor Layton's Theme", "From \"Professor Layon & The Curios Village\""));
+        songs.add(new Song("Puzzles", "From \"Professor Layon & The Curios Village\""));
+        songs.add(new Song("Harry Potter Soundtrack", "John Williams"));
 
         // Create an {@link SongAdapter}, whose data source is a list of {@link Songs}s. The
         // adapter knows how to create list items for each item in the list.
