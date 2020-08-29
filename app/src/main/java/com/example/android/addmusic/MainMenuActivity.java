@@ -3,6 +3,7 @@ package com.example.android.addmusic;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,29 +13,65 @@ public class MainMenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-    }
 
-    //    Starts the activity that contains songs with the the action
-    public void displayActionMusic (View view){
-        Intent i = new Intent(this, ActionMusicActivity.class);
-        startActivity(i);
-    }
+        // Find the button that starts the app
+        Button action = findViewById(R.id.action);
 
-    //    Starts the activity that contains songs with the the comedy
-    public void displayComedyMusic (View view){
-        Intent i = new Intent(this, ComedyMusicActivity.class);
-        startActivity(i);
-    }
+        action.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the drama category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainMenuActivity}
+                Intent i = new Intent(MainMenuActivity.this, ComedyMusicActivity.class);
 
-    //    Starts the activity that contains songs with the the drama
-    public void displayDramaMusic (View view){
-        Intent i = new Intent(this, DramaMusicActivity.class);
-        startActivity(i);
-    }
+                // Start the new activity
+                startActivity(i);
+            }
+        });
 
-    //    Starts the activity that contains songs with the the thriller
-    public void displayThrillerMusic (View view){
-        Intent i = new Intent(this, ThrillerMusicActivity.class);
-        startActivity(i);
+        // Find the button that starts the app
+        Button comedy = findViewById(R.id.comedy);
+
+        comedy.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the drama category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainMenuActivity}
+                Intent menuIntent = new Intent(MainMenuActivity.this, ComedyMusicActivity.class);
+
+                // Start the new activity
+                startActivity(menuIntent);
+            }
+        });
+
+        // Find the button that starts the app
+        Button drama = findViewById(R.id.drama);
+
+        drama.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the drama category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainMenuActivity}
+                Intent i = new Intent(MainMenuActivity.this, DramaMusicActivity.class);
+
+                // Start the new activity
+                startActivity(i);
+            }
+        });
+
+        // Find the button that starts the app
+        Button thriller = findViewById(R.id.thriller);
+
+        thriller.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the drama category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link MainMenuActivity}
+                Intent menuIntent = new Intent(MainMenuActivity.this, ThrillerMusicActivity.class);
+
+                // Start the new activity
+                startActivity(menuIntent);
+            }
+        });
     }
 }
