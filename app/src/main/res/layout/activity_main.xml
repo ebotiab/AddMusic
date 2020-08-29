@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/dj_screen"
-    android:onClick="displayMenu"
     tools:context=".MainActivity"
     android:id="@+id/main">
 
@@ -20,24 +19,27 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/trade_winds"
+        android:text="@string/app_name"
+        android:textColor="#FFFFFF"
+        android:textSize="56sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="77dp"
-        android:background="#33000000"
+        android:background="@android:color/transparent"
         android:fontFamily="@font/trade_winds"
         android:text="@string/start"
         android:textColor="#FFFFFF"
